@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080b12" />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg?v=ks-1" />
+    <title>Nossas bebidas | KS Distribuidora</title>
+    <meta
+      name="description"
+      content="KS Distribuidora em Coimbra. Bebidas, serviços e pedidos de delivery."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/bebidas.css" />
+    <link rel="stylesheet" href="../public/css/responsivo.css" />
+  <link rel="stylesheet" href="../public/css/conta.css" />
+</head>
+  <body>
+    <div class="top">
+      COIMBRA E REGIÃO &nbsp; • &nbsp; BEBIDAS, GÁS E MUITO MAIS
+    </div>
+    <header>
+      <nav class="wrap">
+        <a class="logo" href="./index.html" aria-label="KS Distribuidora início"
+          ><span class="monogram">KS</span
+          ><span>DISTRIBUIDORA<br />COIMBRA • MG</span></a
+        >
+        <div class="links">
+          <a href="./index.html">Início</a>
+          <a href="./bebidas.html">Nossas bebidas</a
+          ><a href="./servicos.html">Serviços</a
+          ><a href="./contato.html">Contato</a>
+        </div>
+        <a class="btn" href="./delivery.html">Pedir delivery ↗</a>
+      </nav>
+      <div class="mobile-links wrap">
+        <a href="./index.html">Início</a>
+        <a href="./bebidas.html">Bebidas</a
+        ><a href="./servicos.html">Serviços</a
+        ><a href="./contato.html">Contato</a
+        ><a href="./delivery.html">Delivery</a>
+      </div>
+    </header>
+    <main>
+      <section id="bebidas" class="section wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Encontre sua favorita</div>
+            <h2>Seu brinde. Sua escolha.</h2>
+          </div>
+          <p>
+            Uma seleção para todos os momentos.<br />Consulte os sabores e a
+            disponibilidade com a gente.
+          </p>
+        </div>
+        <div class="brand-options">
+          <a href="./delivery.html?marca=Itaipava">Fardo de Itaipava ↗</a
+          ><a href="./delivery.html?marca=Skol">Fardo de Skol ↗</a
+          ><a href="./delivery.html?marca=Heineken">Fardo de Heineken ↗</a
+          ><a href="./delivery.html?marca=Local">Fardo de Local ↗</a
+          ><a href="./delivery.html?marca=Brahma">Fardo de Brahma ↗</a>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar bebidas">
+          <button class="filter active" data-filter="todos" aria-pressed="true">
+            Todas as bebidas</button
+          ><button class="filter" data-filter="cervejas" aria-pressed="false">
+            Cervejas & drinks</button
+          ><button class="filter" data-filter="destilados" aria-pressed="false">
+            Destilados</button
+          ><button
+            class="filter"
+            data-filter="energeticos"
+            aria-pressed="false"
+          >
+            Energéticos
+          </button>
+        </div>
+        <div class="grid" id="products"></div>
+        <p class="availability">
+          Fotos reais das embalagens. Preços de referência pesquisados na
+          internet em 12/10/2026, por unidade, sem frete. O preço de venda, a
+          embalagem disponível e o estoque da KS devem ser confirmados antes do
+          pedido.
+        </p>
+        <div class="occasion">
+          <div class="occasion-content">
+            <div class="eyebrow">O encontro já tem parceiro</div>
+            <h2>Juntou a galera?<br />Chama a KS.</h2>
+            <p>
+              Vodka, whisky, energético e gelo de sabor.<br />Fale com a gente e
+              consulte os combos disponíveis para o seu rolê.
+            </p>
+            <a class="btn light" href="./delivery.html">Montar pedido ↗</a>
+          </div>
+          <div class="occasion-art" aria-hidden="true">
+            BONS<br />MOMENTOS<span>SEU ROLÊ.<br />NOSSO COMBO.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <a class="logo" href="./index.html"
+        ><span class="monogram">KS</span
+        ><span>DISTRIBUIDORA<br />SEU PARCEIRO EM BONS MOMENTOS</span></a
+      >
+      <div class="footer-right">
+        <a
+          href="https://www.instagram.com/ks.distribuidora.oficial/"
+          target="_blank"
+          rel="noopener"
+          >Instagram ↗ &nbsp; @ks.distribuidora.oficial</a
+        ><br />Bebidas alcoólicas somente para maiores de 18 anos. Beba com
+        moderação.
+      </div>
+    </footer>
+    <script src="../public/js/bebidas.js"></script>
+  <script src="../public/js/conta.js"></script>
+</body>
+</html>

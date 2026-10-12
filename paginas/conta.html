@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080b12" />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg?v=ks-1" />
+    <title>Minha conta | KS Distribuidora</title>
+    <meta
+      name="description"
+      content="KS Distribuidora em Coimbra. Bebidas, serviços e pedidos de delivery."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/index.css" />
+    <link rel="stylesheet" href="../public/css/responsivo.css" />
+  <link rel="stylesheet" href="../public/css/conta.css" />
+</head>
+  <body><header>
+      <nav class="wrap">
+        <a class="logo" href="./index.html" aria-label="KS Distribuidora início"
+          ><span class="monogram">KS</span
+          ><span>DISTRIBUIDORA<br />COIMBRA • MG</span></a
+        >
+        <div class="links">
+          <a href="./index.html" class="nav-active" aria-current="page"
+            >Início</a
+          >
+          <a href="./bebidas.html">Nossas bebidas</a
+          ><a href="./servicos.html">Serviços</a
+          ><a href="./contato.html">Contato</a>
+        </div>
+        <a class="btn" href="./delivery.html">Pedir delivery ↗</a>
+      </nav>
+      <div class="mobile-links wrap">
+        <a href="./index.html" class="nav-active" aria-current="page">Início</a>
+        <a href="./bebidas.html">Bebidas</a
+        ><a href="./servicos.html">Serviços</a
+        ><a href="./contato.html">Contato</a
+        ><a href="./delivery.html">Delivery</a>
+      </div>
+    </header>
+<main id="account-main" class="account-main wrap">
+<div class="eyebrow">Mais facilidade no próximo pedido</div>
+<h1>Seu brinde.<br>Sua conta.</h1>
+<p class="account-lead">Entre com o Google, salve seu endereço e acompanhe os pedidos feitos com sua conta. Seus dados, sempre à mão.</p>
+<p id="account-message" class="account-status" role="status" aria-live="polite">Carregando sua conta…</p>
+<button id="account-retry" class="account-text-button" hidden>Tentar novamente</button>
+<section id="account-signed-out" class="account-box" hidden>
+<h3>Bem-vindo à KS.</h3><p>Use sua conta Google para começar. A KS recebe seu nome e e-mail. Você escolhe o telefone e o endereço que deseja salvar.</p>
+<button id="google-login" class="google-button" disabled><span class="google-symbol" aria-hidden="true">G</span>Entrar com Google</button>
+<p>O Google não compartilha sua senha com a KS.</p>
+<a class="account-text-button" href="./delivery.html">Continuar com meu pedido ↗</a>
+</section>
+<div id="account-signed-in" hidden>
+<div class="account-actions"><div><strong id="account-name"></strong><p id="account-email" class="account-email account-lead"></p></div><button id="account-signout" class="account-text-button">Sair da conta</button></div>
+<div class="account-layout"><section class="account-box"><h3>Dados de entrega</h3><p>Salve seus dados para preencher o próximo pedido. Revise o endereço antes de confirmar a entrega.</p>
+<form id="profile-form"><div class="account-fields"><label>Nome completo<input name="name" autocomplete="name" maxlength="120" required></label>
+<label>Telefone com DDD<input name="phone" autocomplete="tel" maxlength="20" type="tel" inputmode="tel" required></label>
+<label>Cidade<input name="city" autocomplete="address-level2" maxlength="100" required></label>
+<label>Bairro<input name="neighborhood" autocomplete="address-level3" maxlength="100" required></label>
+<label>Rua<input name="street" autocomplete="address-line1" maxlength="160" required></label>
+<label>Número<input name="number" autocomplete="off" maxlength="20" required></label>
+<label>Complemento (opcional)<input name="complement" autocomplete="address-line2" maxlength="100" ></label>
+<label>Referência (opcional)<input name="reference" autocomplete="off" maxlength="160" ></label></div><div class="account-actions"><button class="btn" type="submit">Salvar meus dados ↗</button><button id="delete-profile" class="account-text-button" type="button">Remover dados salvos</button></div>
+<p id="profile-message" class="account-status" role="status" aria-live="polite"></p></form></section>
+<section class="account-box"><h3>Meus pedidos</h3><p>Pedidos feitos após entrar nesta conta. O valor e a disponibilidade são confirmados pela KS.</p><div id="account-orders"></div></section></div></div></main><footer class="wrap">
+      <a class="logo" href="./index.html"
+        ><span class="monogram">KS</span
+        ><span>DISTRIBUIDORA<br />SEU PARCEIRO EM BONS MOMENTOS</span></a
+      >
+      <div class="footer-right">
+        <a
+          href="https://www.instagram.com/ks.distribuidora.oficial/"
+          target="_blank"
+          rel="noopener"
+          >Instagram ↗ &nbsp; @ks.distribuidora.oficial</a
+        ><br />Bebidas alcoólicas somente para maiores de 18 anos. Beba com
+        moderação.
+      </div>
+    </footer><script src="../public/js/conta.js"></script>
+</body></html>

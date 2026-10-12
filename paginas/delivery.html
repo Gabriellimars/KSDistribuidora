@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080b12" />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg?v=ks-1" />
+    <title>Delivery | KS Distribuidora</title>
+    <meta
+      name="description"
+      content="KS Distribuidora em Coimbra. Bebidas, serviços e pedidos de delivery."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/delivery.css" />
+    <link rel="stylesheet" href="../public/css/responsivo.css" />
+  <link rel="stylesheet" href="../public/css/conta.css" />
+</head>
+  <body class="page-delivery">
+    <div class="top">
+      COIMBRA E REGIÃO &nbsp; • &nbsp; BEBIDAS, GÁS E MUITO MAIS
+    </div>
+    <header>
+      <nav class="wrap">
+        <a class="logo" href="./index.html" aria-label="KS Distribuidora início"
+          ><span class="monogram">KS</span
+          ><span>DISTRIBUIDORA<br />COIMBRA • MG</span></a
+        >
+        <div class="links">
+          <a href="./index.html">Início</a>
+          <a href="./bebidas.html">Nossas bebidas</a
+          ><a href="./servicos.html">Serviços</a
+          ><a href="./contato.html">Contato</a>
+        </div>
+      </nav>
+      <div class="mobile-links wrap">
+        <a href="./index.html">Início</a>
+        <a href="./bebidas.html">Bebidas</a
+        ><a href="./servicos.html">Serviços</a
+        ><a href="./contato.html">Contato</a
+        ><a href="./delivery.html">Delivery</a>
+      </div>
+    </header>
+    <main>
+      <section class="page-intro wrap">
+        <div class="eyebrow">KS na sua porta</div>
+        <h1 class="page-title">Monte seu delivery.</h1>
+        <p>
+          Escolha bebidas avulsas ou fardos, acrescente os adicionais e confirme
+          o endereço. Seu pedido fica registrado para atendimento pela KS.
+        </p>
+      </section>
+      <div class="wrap">
+        <p id="preview-notice" class="notice" role="status" hidden>
+          Monte seu pedido e envie à KS para confirmar o valor e a
+          disponibilidade.
+        </p>
+      </div>
+      <div class="wrap steps" aria-label="Etapas do pedido">
+        <span class="step active" id="step-products">01 · Produtos</span
+        ><span class="step" id="step-address">02 · Endereço</span
+        ><span class="step" id="step-review">03 · Revisão</span>
+      </div>
+      <div class="wrap delivery-layout">
+        <div>
+          <section class="box" id="beverages-section">
+            <h3>1. Bebidas avulsas</h3>
+            <p class="hint">
+              Escolha suas bebidas e a quantidade de unidades. Você pode comprar
+              somente bebidas avulsas, sem adicionar fardos.
+            </p>
+            <div id="beverages" class="extras"></div>
+          </section>
+          <form id="pack-form" class="box">
+            <h3>2. Fardos (opcional)</h3>
+            <div class="fields">
+              <label class="field"
+                >Marca<select id="brand" required>
+                  <option>Itaipava</option>
+                  <option>Skol</option>
+                  <option>Heineken</option>
+                  <option>Local</option>
+                  <option>Brahma</option>
+                </select></label
+              ><label class="field"
+                >Embalagem<select id="format">
+                  <option value="latinha">Latinha</option>
+                  <option value="litrao">Litrão (1 L)</option>
+                  <option value="600ml">600 ml</option>
+                </select></label
+              ><label class="field"
+                >Quantidade de fardos<input
+                  id="quantity"
+                  type="number"
+                  value="1"
+                  min="1"
+                  max="99"
+                  required
+              /></label>
+            </div>
+            <p class="hint">
+              Quantidade de unidades por fardo e disponibilidade a confirmar com
+              a KS.
+            </p>
+            <button class="btn" type="submit">Adicionar fardo +</button>
+            <div id="cart-items" aria-live="polite"></div>
+            <p id="cart-error" class="error" role="alert"></p>
+          </form>
+          <section class="box">
+            <h3>
+              3. Adicionais <small class="page-inline-1">(opcional)</small>
+            </h3>
+            <p class="hint">
+              Se quiser, acrescente gelo ou gelo de sabor ao pedido.
+            </p>
+            <div id="extras" class="extras"></div>
+            <label class="field full page-inline-2"
+              >Quer algo diferente? (opcional)<textarea
+                id="notes"
+                rows="3"
+                maxlength="500"
+                placeholder="Ex.: preferências de entrega ou gelo de sabor. Disponibilidade a confirmar."
+              ></textarea>
+            </label>
+          </section>
+          <form id="address-form" class="box">
+            <h3>4. Endereço de entrega</h3>
+            <div class="fields">
+              <label class="field full"
+                >Nome completo<input
+                  name="name"
+                  autocomplete="name"
+                  maxlength="120"
+                  required /></label
+              ><label class="field"
+                >Telefone / WhatsApp<input
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  maxlength="20"
+                  minlength="10"
+                  pattern="[0-9 ()+\-]{10,20}"
+                  placeholder="(32) 99999-9999"
+                  required /></label
+              ><label class="field"
+                >Cidade<input
+                  name="city"
+                  autocomplete="address-level2"
+                  value="Coimbra"
+                  maxlength="100"
+                  required /></label
+              ><label class="field full"
+                >Rua / avenida<input
+                  name="street"
+                  autocomplete="address-line1"
+                  maxlength="160"
+                  required /></label
+              ><label class="field"
+                >Bairro<input
+                  name="neighborhood"
+                  maxlength="100"
+                  required /></label
+              ><label class="field"
+                >Número da casa / imóvel<input
+                  name="number"
+                  maxlength="20"
+                  placeholder="Ex.: 123 ou s/n"
+                  required /></label
+              ><label class="field full"
+                >Complemento (opcional)<input
+                  name="complement"
+                  autocomplete="address-line2"
+                  maxlength="100"
+                  placeholder="Apartamento, bloco..." /></label
+              ><label class="field full"
+                >Ponto de referência (opcional)<input
+                  name="reference"
+                  maxlength="160"
+                  placeholder="Ex.: próximo à praça"
+              /></label>
+            </div>
+            <button type="submit" class="btn">Confirmar endereço →</button>
+            <p id="address-message" class="hint" aria-live="polite"></p>
+          </form>
+          <section id="review" class="box" hidden>
+            <h3>5. Revise sua encomenda</h3>
+            <div id="address-review" class="address-review"></div>
+            <button id="edit-address" class="btn light" type="button">
+              Editar endereço
+            </button>
+            <p class="notice">
+              Os itens sem preço cadastrado e a entrega ficam sob consulta.
+              Registrar o pedido não confirma pagamento, estoque ou entrega: a
+              KS entrará em contato para confirmar o valor final.
+            </p>
+          </section>
+          <section
+            id="success"
+            class="success"
+            hidden
+            role="status"
+            tabindex="-1"
+          ></section>
+        </div>
+        <aside class="box summary" aria-label="Resumo da encomenda">
+          <div class="eyebrow">Seu próximo brinde</div>
+          <h3 class="page-inline-3">Resumo do pedido</h3>
+          <div id="summary-items"></div>
+          <div class="summary-line">
+            <span>Itens</span><strong id="subtotal">—</strong>
+          </div>
+          <div class="summary-line">
+            <span>Taxa de entrega</span><strong id="shipping">Grátis</strong>
+          </div>
+          <div class="summary-line total">
+            <span>Total</span><span id="total" aria-live="polite">—</span>
+          </div>
+          <p id="price-notice" class="subtle">
+            Adicione um fardo para começar.
+          </p>
+
+          <div class="checkout-actions">
+            <label class="age-confirmation">
+              <input id="adult" type="checkbox" />
+              <span>Declaro ter 18 anos ou mais.</span>
+            </label>
+            <button id="place-order" type="button" class="btn width-full">
+              Finalizar compra →
+            </button>
+            <p id="order-error" class="error" role="alert"></p>
+          </div>
+          <section
+            id="pix-payment"
+            class="pix-payment"
+            aria-labelledby="pix-title"
+            hidden
+          >
+            <h3 id="pix-title">Pagamento por Pix</h3>
+            <p id="pix-amount" class="pix-amount"></p>
+            <p id="pix-value-notice" class="notice" hidden>
+              O QR Code inclui o valor total apresentado no resumo do pedido.
+            </p>
+            <div
+              id="pix-qr"
+              class="pix-qr"
+              role="img"
+              aria-label="QR Code para pagar por Pix à KS"
+            ></div>
+            <p class="subtle">Chave Pix: <strong id="pix-key"></strong></p>
+            <label class="field">
+              Pix copia e cola
+              <textarea
+                id="pix-code"
+                class="pix-code"
+                rows="3"
+                readonly
+                spellcheck="false"
+              ></textarea>
+            </label>
+            <button id="copy-pix" type="button" class="btn width-full">
+              Copiar código Pix
+            </button>
+            <p id="pix-message" class="hint" role="status"></p>
+            <p class="subtle">
+              Escaneie o QR Code ou cole o código no aplicativo do seu banco.
+              Confira o favorecido antes de concluir. A KS confirma o
+              recebimento manualmente.
+            </p>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="wrap">
+      <a class="logo" href="./index.html"
+        ><span class="monogram">KS</span
+        ><span>DISTRIBUIDORA<br />SEU PARCEIRO EM BONS MOMENTOS</span></a
+      >
+      <div class="footer-right">
+        <a
+          href="https://www.instagram.com/ks.distribuidora.oficial/"
+          target="_blank"
+          rel="noopener"
+          >Instagram ↗ &nbsp; @ks.distribuidora.oficial</a
+        ><br />Bebidas alcoólicas somente para maiores de 18 anos. Beba com
+        moderação.
+      </div>
+    </footer>
+    <script src="../public/js/delivery-options.js"></script>
+    <script src="../public/js/vendor/qrcode.js"></script>
+    <script src="../public/js/pix-config.js"></script>
+    <script src="../public/js/pix.js"></script>
+    <script src="../public/js/delivery.js"></script>
+  <script src="../public/js/conta.js"></script>
+</body>
+</html>

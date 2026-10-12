@@ -1,0 +1,9 @@
+Modo: ferramenta Imagegen integrada. Imagens originais preservadas.
+Heineken e Red Label: recortes PNG para a pagina inicial.
+Tanqueray: PNG original, ja transparente.
+
+Prompt inicial:
+Use case: background-extraction. Edit target: supplied real product photo. Remove only the background and any text panel outside the bottle (including the green side panel for Heineken). Keep precisely the original bottle, brand, labels, lettering, colors, cap and photographic details. Do not redraw or invent label text. Output one upright isolated full bottle as PNG with genuine transparent alpha background, no shadow, no caption, no other objects. Crop canvas closely around bottle with small even transparent margins; portrait aspect. Asset for website hero.
+
+Prompt de refinamento:
+Use case: background-extraction. Edit the supplied bottle image: remove ALL colored glow, haze, light rays and shadow outside the precise physical bottle silhouette. Every pixel outside the bottle must be fully transparent (alpha 0), including the gaps next to the cap and shoulders. Preserve the bottle and its existing label exactly. No artistic enhancement. Output clean isolated full bottle PNG cutout, crisp antialiased edges, no background, no shadow, no glow, no text added. Crop close with narrow transparent margins.

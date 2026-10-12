@@ -1,0 +1,22 @@
+.ks-account-link{display:inline-flex;align-items:center;gap:8px;color:#e9bc66;font-size:12px;white-space:nowrap;margin-left:14px}.account-main{max-width:980px;padding:65px 0 80px;margin:auto}.account-main h1{font-size:clamp(54px,8vw,82px);margin:18px 0}.account-lead{color:#a0a6b5;line-height:1.8;max-width:550px;font-size:14px}.account-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;margin-top:30px}.account-box{padding:30px;border:1px solid #ffffff18;background:#111722;border-radius:6px}.account-box h3{font-size:32px;margin:0 0 15px}.account-box p{font-size:13px;color:#a0a6b5;line-height:1.7}.google-button{display:inline-flex;align-items:center;gap:12px;background:white;color:#222;border:1px solid #ddd;border-radius:4px;padding:13px 20px;font-weight:600;font-size:14px}.google-button:disabled{opacity:.6;cursor:not-allowed}.google-symbol{font-weight:800;font-size:20px;color:#4285f4}.account-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.account-fields label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:#b5bdcd}.account-fields .full{grid-column:1/-1}.account-fields input{width:100%;background:#080b12;border:1px solid #ffffff25;color:white;padding:12px;border-radius:3px;font:inherit}.account-fields input:focus{outline:2px solid #6080ff;outline-offset:2px}.account-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px;align-items:center}.account-text-button{border:0;background:transparent;color:#e9bc66;padding:10px 0;font:inherit;font-size:12px}.account-status{font-size:12px;line-height:1.7;color:#e9bc66;min-height:1em}.account-order{border-bottom:1px solid #ffffff15;padding:20px 0}.account-order h4{margin:0 0 8px;font-size:13px}.account-order ul{padding-left:18px;color:#a0a6b5;font-size:12px;line-height:1.8}.account-order p{margin:5px 0;font-size:12px}.account-email{overflow-wrap:anywhere}.account-save-option{font-size:12px;line-height:1.7;color:#a0a6b5;margin-top:14px}.account-save-option input{accent-color:#315eff}.account-box[hidden],#account-signed-in[hidden],#account-signed-out[hidden]{display:none}@media(max-width:700px){.account-main{padding:40px 0}.account-layout{grid-template-columns:1fr}.account-box{padding:23px}.ks-account-link{font-size:10px;margin-left:auto}.account-fields{grid-template-columns:1fr}.account-fields .full{grid-column:auto}}
+@media(max-width:600px){header nav{gap:10px}.ks-account-link{font-size:11px;margin-left:auto}header .logo span:last-child{display:none}}
+.saved-address-card{position:fixed;right:24px;bottom:24px;z-index:30;width:320px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 120px);overflow:auto;background:#111722;border:1px solid #e9bc6650;border-radius:10px;padding:24px;box-shadow:0 14px 55px #0009}
+.saved-address-card[hidden]{display:none}
+.saved-address-card h3{font:700 30px "Barlow Condensed",sans-serif;margin:9px 0 18px;text-transform:uppercase}
+.saved-address-label{color:#e9bc66;font-size:9px;letter-spacing:2px;text-transform:uppercase}
+.saved-address-text{white-space:pre-line;overflow-wrap:anywhere;line-height:1.8;color:#c3cbd8;font-size:13px;margin:0}
+.saved-address-actions{display:flex;align-items:center;gap:18px;margin-top:20px}
+.saved-address-actions .btn{font-size:11px;padding:12px 16px}
+.saved-address-card .account-status{margin:14px 0 0;font-size:11px}
+.account-layout.has-saved-address{grid-template-columns:1fr}
+.account-box:has(#profile-form){scroll-margin-top:110px}
+@media(max-width:700px){.saved-address-card{right:16px;bottom:16px;width:calc(100vw - 32px);padding:20px}.account-main:has(.saved-address-card:not([hidden])){padding-bottom:340px}}
+
+.ks-account-link{max-width:160px;overflow:hidden;text-overflow:ellipsis}
+.delivery-saved-address{margin:0 0 25px;padding:22px;background:#080b12;border:1px solid #e9bc6645;border-radius:6px}
+.delivery-saved-address[hidden]{display:none}
+.delivery-saved-address h4{font:700 26px "Barlow Condensed",sans-serif;text-transform:uppercase;color:#e9bc66;margin:0 0 14px}
+.delivery-saved-address-text{white-space:pre-line;overflow-wrap:anywhere;font-size:13px;color:#bcc5d6;line-height:1.8;margin:0}
+.delivery-saved-address .saved-address-actions{flex-wrap:wrap}
+.delivery-saved-address .btn{font-size:12px}
+@media(max-width:600px){.ks-account-link{max-width:105px}.delivery-saved-address{padding:18px}}

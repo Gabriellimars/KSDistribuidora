@@ -1,0 +1,42 @@
+[
+  {
+    "source": "https://cdn.dooca.store/39545/products/xg6bhofpjowxrm9ixidtk0di0aspgrwitwxw_620x620%2Bfill_ffffff.png?v=1677091534\u0026webp=0",
+    "name": "heineken",
+    "file": "heineken.png"
+  },
+  {
+    "source": "https://www.paodeacucar.com/img/uploads/1/359/33029359.png",
+    "name": "tanqueray",
+    "file": "tanqueray.png"
+  },
+  {
+    "source": "https://d31f1ehqijlcua.cloudfront.net/n/3/0/d/d/30dd062f9c929abc8147bc31512d95dc616b3319_Whiskey_58129_01.jpg",
+    "name": "red-label",
+    "file": "red-label.jpg"
+  },
+  {
+    "source": "https://farmaciasnissei.com.br/media/produtos/Tradicional%20-%20Energ%C3%A9tico%20Baly%202L%20-%20PNG.png",
+    "name": "baly",
+    "file": "baly.png"
+  },
+  {
+    "source": "https://carrefourbrfood.vtexassets.com/arquivos/ids/134559175/drink-pronto-beats-senses-269ml-lata-1.jpg?v=638364458144330000",
+    "name": "beats",
+    "file": "beats.jpg"
+  },
+  {
+    "source": "https://images.tcdn.com.br/img/img_prod/686223/vodka_smirnoff_red_998ml_vidro_33984395_1_0b34744fbd03cafcd17d9bf6208682c7.png",
+    "name": "smirnoff",
+    "file": "smirnoff.png"
+  },
+  {
+    "source": "https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/23956/medium/whisky-nacional-white-horse-1l_74672.png",
+    "name": "white-horse",
+    "file": "white-horse.png"
+  },
+  {
+    "source": "https://www.arenaatacado.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw624ca5e8/Produtos/992364-7896741650429-coquetel%20alcoolico%20stempel%20red%20-%20600ml-stempel-1.jpg",
+    "name": "stempel",
+    "file": "stempel.jpg"
+  }
+]
